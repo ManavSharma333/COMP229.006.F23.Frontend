@@ -1,25 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import UseStateExample from './components/UseStateExample';
+import Counter from './components/UseReducerExample';
+import UseContextExample from './components/UseContextExample';
+import ComponentC from './components/ComponentC';
+import Component3 from './components/Component3';
 import reportWebVitals from './reportWebVitals';
-
-const items = [
-  "1 cup unsalted butter",
-  "1 cup crunchy peanut butter",
-  "1 cup brown sugar",
-  "1 cup white sugar",
-  "2 eggs",
-  "2.5 cups all purpose flour",
-  "1 teaspoon baking powder",
-  "0.5 teaspoon salt",
-  "Send it to me"
-];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App items={items}/>
+    <UseStateExample />
+    <p>Test</p>
+    <Counter/>
+    <UseContextExample Component3={Component3} ComponentC={ ComponentC}/>
   </React.StrictMode>
 );
 
